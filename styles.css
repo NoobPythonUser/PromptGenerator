@@ -2,16 +2,12 @@
   color-scheme: light;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   line-height: 1.4;
-  --lab-navy: #0f1d3a;
-  --lab-mint: #6ee7c8;
-  --lab-ink: #1f2937;
-  --lab-bg: #f6f8fc;
 }
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top, #eaf9f4 0%, var(--lab-bg) 30%);
-  color: var(--lab-ink);
+  background: #f4f7fb;
+  color: #1d2433;
 }
 
 .container {
@@ -20,33 +16,22 @@ body {
   padding: 0 1rem 2rem;
 }
 
-.hero {
-  text-align: left;
+header h1 {
+  margin-bottom: 0.5rem;
 }
 
-.brand-logo {
-  width: 220px;
-  height: auto;
-  margin-bottom: 0.8rem;
-}
-
-.hero h1 {
-  margin: 0 0 0.5rem;
-  color: var(--lab-navy);
-}
-
-.hero p {
+header p {
   margin-top: 0;
-  color: #3f4a62;
+  color: #435070;
 }
 
 .card {
   background: white;
-  border: 1px solid #d8dfef;
-  border-radius: 14px;
+  border: 1px solid #dbe3f0;
+  border-radius: 12px;
   padding: 1.1rem;
   margin-top: 1rem;
-  box-shadow: 0 8px 22px rgba(15, 29, 58, 0.08);
+  box-shadow: 0 4px 12px rgba(15, 38, 95, 0.05);
 }
 
 form {
@@ -74,14 +59,14 @@ button {
 
 button {
   cursor: pointer;
-  background: var(--lab-navy);
+  background: #2747d9;
   color: white;
   border: none;
   font-weight: 600;
 }
 
 button:hover {
-  background: #182c57;
+  background: #1f3bc0;
 }
 
 .output-header {
@@ -92,17 +77,17 @@ button:hover {
 
 #copyBtn {
   width: 90px;
-  background: #e6fbf4;
-  color: #125340;
+  background: #e9eefc;
+  color: #15318e;
 }
 
 #copyBtn:hover {
-  background: #cff7eb;
+  background: #d8e3ff;
 }
 
 pre {
   white-space: pre-wrap;
-  background: #fbfdff;
+  background: #f8faff;
   border: 1px solid #dbe3f0;
   border-radius: 8px;
   padding: 1rem;

@@ -1,6 +1,6 @@
 # PromptGenerator
 
-A lightweight prompt generation app tailored for **The Content Lab** and the Brand Solutions Executive workflow.
+A lightweight prompt generation app tailored for a **Brand Solutions Executive at an advertising agency**.
 
 ## What it does
 
@@ -24,15 +24,6 @@ Then open: <http://localhost:8000>
 
 ## Files
 
-- `index.html` — app UI and campaign input form
-- `styles.css` — The Content Lab visual styling
+- `index.html` — UI and form inputs
+- `styles.css` — styling
 - `app.js` — prompt templates + generation logic
-- `logo-content-lab.svg` — The Content Lab logo asset used in header
-
-## Conflict check
-
-To quickly validate that no merge markers are present after rebases/merges:
-
-```bash
-./scripts/verify-no-conflicts.sh
-```

@@ -3,7 +3,7 @@ const output = document.getElementById('output');
 const copyBtn = document.getElementById('copyBtn');
 
 const templates = {
-  brief: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are a senior Brand Strategy Director at The Content Lab. Build a strategic creative brief for ${brand}.
+  brief: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are a senior Brand Strategy Director at a top advertising agency. Build a strategic creative brief for ${brand}.
 
 Campaign objective: ${goal}
 Target audience: ${audience}
@@ -42,7 +42,7 @@ Constraints:
 - Show one table: copy line, funnel stage, and suggested channel.
 - End with top 3 recommended variants to test first and why.`,
 
-  media: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are a Brand Solutions Executive at The Content Lab preparing a paid + organic media recommendation for ${brand}.
+  media: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are a Brand Solutions Executive preparing a paid + organic media recommendation for ${brand}.
 
 Business goal: ${goal}
 Audience: ${audience}
@@ -61,6 +61,7 @@ Create a channel strategy that includes:
 Output in a format suitable for a client presentation and include a final "executive recommendation" section.`,
 
   client: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are helping The Content Lab Brand Solutions Executive craft a client-ready recommendation narrative for ${brand}.
+  client: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are helping a Brand Solutions Executive craft a client-ready recommendation narrative for ${brand}.
 
 Inputs:
 - Goal: ${goal}
