@@ -28,3 +28,11 @@ Then open: <http://localhost:8000>
 - `styles.css` — The Content Lab visual styling
 - `app.js` — prompt templates + generation logic
 - `logo-content-lab.svg` — The Content Lab logo asset used in header
+
+## Conflict check
+
+To quickly validate that no merge markers are present after rebases/merges:
+
+```bash
+./scripts/verify-no-conflicts.sh
+```
