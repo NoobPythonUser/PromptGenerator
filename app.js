@@ -21,7 +21,7 @@ Deliverables:
 
 Make the response concise, executive-ready, and clearly tied to business outcomes.`,
 
-  copy: ({ brand, goal, audience, channels, tone, budget, timeline }) => `Act as a Creative Director + Performance Copywriter team. Generate ad copy concepts for ${brand}.
+  copy: ({ brand, goal, audience, channels, tone, budget, timeline }) => `Act as a Creative Director + Performance Copywriter team at The Content Lab. Generate ad copy concepts for ${brand}.
 
 Objective: ${goal}
 Audience: ${audience}
@@ -60,6 +60,7 @@ Create a channel strategy that includes:
 
 Output in a format suitable for a client presentation and include a final "executive recommendation" section.`,
 
+  client: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are helping The Content Lab Brand Solutions Executive craft a client-ready recommendation narrative for ${brand}.
   client: ({ brand, goal, audience, channels, tone, budget, timeline }) => `You are helping a Brand Solutions Executive craft a client-ready recommendation narrative for ${brand}.
 
 Inputs:
