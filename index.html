@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Solutions Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Brand Solutions Prompt Generator</h1>
+        <p>
+          Build polished AI prompts for campaign strategy, client presentations,
+          and channel execution.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Campaign Inputs</h2>
+        <form id="promptForm">
+          <label>
+            Brand / Client
+            <input id="brand" required placeholder="e.g., Nike" />
+          </label>
+
+          <label>
+            Campaign Goal
+            <input
+              id="goal"
+              required
+              placeholder="e.g., Increase awareness for summer launch"
+            />
+          </label>
+
+          <label>
+            Target Audience
+            <input
+              id="audience"
+              required
+              placeholder="e.g., Gen Z athletes in urban markets"
+            />
+          </label>
+
+          <label>
+            Primary Channel(s)
+            <input
+              id="channels"
+              placeholder="e.g., TikTok, YouTube, OOH"
+            />
+          </label>
+
+          <label>
+            Brand Tone
+            <input
+              id="tone"
+              placeholder="e.g., Confident, playful, inclusive"
+            />
+          </label>
+
+          <label>
+            Budget Context
+            <input id="budget" placeholder="e.g., Mid six-figure budget" />
+          </label>
+
+          <label>
+            Timeline / Milestone
+            <input
+              id="timeline"
+              placeholder="e.g., Launch in 6 weeks, optimize weekly"
+            />
+          </label>
+
+          <label>
+            Prompt Type
+            <select id="promptType">
+              <option value="brief">Strategic Creative Brief</option>
+              <option value="copy">Ad Copy Variations</option>
+              <option value="media">Media Plan Recommendations</option>
+              <option value="client">Client-Ready Recommendation Deck</option>
+            </select>
+          </label>
+
+          <button type="submit">Generate Prompt</button>
+        </form>
+      </section>
+
+      <section class="card output-card">
+        <div class="output-header">
+          <h2>Generated Prompt</h2>
+          <button id="copyBtn" type="button">Copy</button>
+        </div>
+        <pre id="output">Fill in the campaign inputs and click “Generate Prompt”.</pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
