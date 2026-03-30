@@ -1,0 +1,110 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.4;
+  --lab-navy: #0f1d3a;
+  --lab-mint: #6ee7c8;
+  --lab-ink: #1f2937;
+  --lab-bg: #f6f8fc;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #eaf9f4 0%, var(--lab-bg) 30%);
+  color: var(--lab-ink);
+}
+
+.container {
+  max-width: 980px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+.hero {
+  text-align: left;
+}
+
+.brand-logo {
+  width: 220px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  color: var(--lab-navy);
+}
+
+.hero p {
+  margin-top: 0;
+  color: #3f4a62;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d8dfef;
+  border-radius: 14px;
+  padding: 1.1rem;
+  margin-top: 1rem;
+  box-shadow: 0 8px 22px rgba(15, 29, 58, 0.08);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.9rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 0.95rem;
+  gap: 0.45rem;
+}
+
+input,
+select,
+button {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #bfcae1;
+  font-size: 0.95rem;
+}
+
+button {
+  cursor: pointer;
+  background: var(--lab-navy);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #182c57;
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#copyBtn {
+  width: 90px;
+  background: #e6fbf4;
+  color: #125340;
+}
+
+#copyBtn:hover {
+  background: #cff7eb;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #fbfdff;
+  border: 1px solid #dbe3f0;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 190px;
+}

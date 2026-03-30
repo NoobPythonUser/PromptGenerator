@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Content Lab | Prompt Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <img
+          src="logo-content-lab.svg"
+          alt="The Content Lab logo"
+          class="brand-logo"
+        />
+        <h1>The Content Lab Prompt Studio</h1>
+        <p>
+          Generate high-quality prompts for campaign strategy, creative ideation,
+          media planning, and client storytelling.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Campaign Intake</h2>
+        <form id="promptForm">
+          <label>
+            Brand / Client
+            <input id="brand" required placeholder="e.g., Nike" />
+          </label>
+
+          <label>
+            Campaign Goal
+            <input
+              id="goal"
+              required
+              placeholder="e.g., Increase awareness for summer launch"
+            />
+          </label>
+
+          <label>
+            Target Audience
+            <input
+              id="audience"
+              required
+              placeholder="e.g., Gen Z athletes in urban markets"
+            />
+          </label>
+
+          <label>
+            Primary Channel(s)
+            <input
+              id="channels"
+              placeholder="e.g., TikTok, YouTube, OOH"
+            />
+          </label>
+
+          <label>
+            Brand Tone
+            <input
+              id="tone"
+              placeholder="e.g., Confident, playful, inclusive"
+            />
+          </label>
+
+          <label>
+            Budget Context
+            <input id="budget" placeholder="e.g., Mid six-figure budget" />
+          </label>
+
+          <label>
+            Timeline / Milestone
+            <input
+              id="timeline"
+              placeholder="e.g., Launch in 6 weeks, optimize weekly"
+            />
+          </label>
+
+          <label>
+            Prompt Type
+            <select id="promptType">
+              <option value="brief">Strategic Creative Brief</option>
+              <option value="copy">Ad Copy Variations</option>
+              <option value="media">Media Plan Recommendations</option>
+              <option value="client">Client-Ready Recommendation Deck</option>
+            </select>
+          </label>
+
+          <button type="submit">Generate Prompt</button>
+        </form>
+      </section>
+
+      <section class="card output-card">
+        <div class="output-header">
+          <h2>Generated Prompt</h2>
+          <button id="copyBtn" type="button">Copy</button>
+        </div>
+        <pre id="output">Fill in campaign details and click “Generate Prompt”.</pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
